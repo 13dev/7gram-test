@@ -1,5 +1,6 @@
 ### Test application
 ```
+$ composer install
 $ ./vendor/bin/phpunit
 ```
 
