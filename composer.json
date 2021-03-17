@@ -1,0 +1,22 @@
+{
+  "name": "13dev/7gram-test",
+  "description": "7Gram test",
+  "authors": [
+    {
+      "name": "Leo Oliveira",
+      "email": "leo@13dev.pt"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "phpunit/phpunit": "^9.3"
+  },
+  "autoload": {
+    "files": [
+      "helpers.php"
+    ],
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
