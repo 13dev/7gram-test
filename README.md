@@ -15,5 +15,5 @@ $ ./vendor/bin/phpunit
 - Podia aplicar a técnica TDD mas como é coisa simples é banal;
 
 O que eu melhorava no projeto:
-- Faria a classe `Shape` abstrata, removia as propriedades `width`, `length` e implementava na classe `Retangle` já que um shape é muito genérico e nem todos podem ter essas propriedades;
+- Faria a classe `Shape` abstrata, removia as propriedades `width`, `length` e implementava na classe `Retangle` já que um shape é muito genérico e nem todos podem ter essas propriedades (por exemplo circulo não precisa da a prop `length`...);
 - Metia o método `getArea` e `getObject` como abstrato assim a responsabilidade era da classe concreta e não da `Shape` (ou até mesmo utilizar uma interface)
