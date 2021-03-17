@@ -16,4 +16,5 @@ $ ./vendor/bin/phpunit
 
 O que eu melhorava no projeto:
 - Faria a classe `Shape` abstrata, removia as propriedades `width`, `length` e implementava na classe `Retangle` já que um shape é muito genérico e nem todos podem ter essas propriedades (por exemplo circulo não precisa da a prop `length`...);
-- Metia o método `getArea` e `getObject` como abstrato assim a responsabilidade era da classe concreta e não da `Shape` (ou até mesmo utilizar uma interface)
+- Metia o método `getArea` e `getObject` como abstrato assim a responsabilidade era da classe concreta e não da `Shape` (ou até mesmo utilizar uma interface);
+- No `getObject` provavelmente não usaria o clone, talvez percebi o mal o proposito deste método;
