@@ -5,8 +5,6 @@ namespace App\Unit\Tests;
 
 
 use App\Shape;
-use Mockery;
-use Mockery\LegacyMockInterface;
 use PHPUnit\Framework\TestCase;
 
 class ShapeTest extends TestCase
@@ -21,10 +19,6 @@ class ShapeTest extends TestCase
         $this->shape->setName('my_shape');
     }
 
-    private function mocked(): LegacyMockInterface
-    {
-        return Mockery::mock(Shape::class);
-    }
 
     public function test_is_calculating_area_properly()
     {
@@ -38,10 +32,5 @@ class ShapeTest extends TestCase
         }
     }
 
-    public function tearDown(): void
-    {
-        parent::tearDown();
-        Mockery::close();
-    }
 
 }
